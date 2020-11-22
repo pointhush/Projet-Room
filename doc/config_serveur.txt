@@ -1,0 +1,5 @@
+
+    Hôte de connexion (HOST) : sql24
+    Nom d'utilisateur (LOGIN) : diu08731
+    Nom de BASE : diu08731
+    Mot de passe (PASSWORD) : lEG8zCw6yYrw

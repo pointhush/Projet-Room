@@ -1,0 +1,317 @@
+body {
+    padding-top: 70px;
+    margin: 0;
+    background-image: url("../../images/what-the-hex.png");
+}
+
+main {
+    min-height: calc(100vh - 134px);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* EFFET DE LA BARRE DE NAVIGATION*/
+
+@media (min-width: 992px) {
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+a,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+
+/* Page Connexion */
+
+.login,
+.image {
+    min-height: 100vh;
+}
+
+.bg-image {
+    background-image: url('../../images/salle1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-heading {
+    font-weight: 300;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+}
+
+
+/*Page inscription*/
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+}
+
+.card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-signin .card-img-left {
+    width: 45%;
+    /* Link to your background image using in the property below! */
+    background: scroll center url('../../images/salle1');
+    background-size: cover;
+}
+
+.card-signin .card-body {
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'Rochester', cursive;
+    font-size: 2rem;
+    text-transform: lowercase;
+    color: white;
+    padding-right: 2rem;
+}
+
+
+/* Page de présentation */
+
+.prix {
+    font-size: 1.3rem;
+}
+
+.img-sty {
+    max-height: 70vh;
+}
+
+
+/* ETOILE AVIS  */
+
+.star {
+    white-space: nowrap;
+}
+
+.star>i {
+    font-size: 0.7rem;
+}
+
+.fa-star {
+    font-size: 1rem;
+    color: #c7cccf;
+    white-space: nowrap;
+}
+
+.checked {
+    color: #d5ae35;
+}
+
+iframe {
+    border: none;
+}
+
+ol>li {
+    padding: 1rem;
+    font-size: 0.7rem;
+    list-style-type: upper-roman;
+}
+
+ul.men>li {
+    list-style-type: none;
+}
+
+ul.men>li::before {
+    content: "•";
+    padding-right: 1rem;
+    font-size: 1rem;
+    line-height: 0.7rem;
+}
+
+
+/* CODE DU QSN*/
+
+.site-heading .site-heading-upper {
+    display: block;
+    font-size: 3rem;
+    font-family: 'Rochester', cursive;
+    text-transform: lowercase;
+}
+
+.site-heading .site-heading-lower {
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 4rem;
+}
+
+.page-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.section-heading {
+    text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Rochester', cursive;
+    text-transform: lowercase;
+}
+
+.section-heading-lower,
+h2,
+h3 {
+    display: block;
+    font-weight: 100;
+}
+
+.section-heading-lower {
+    font-size: 3rem;
+}
+
+.bg-faded {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.intro {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .intro .intro-img {
+        width: 60%;
+        float: right;
+    }
+    .intro .intro-text {
+        left: 3rem;
+        width: 60%;
+        margin-top: 3rem;
+        position: absolute;
+    }
+    .intro .intro-text .intro-button {
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro .intro-text {
+        width: 45%;
+    }
+}
+
+.cta {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(23, 162, 184, 0.9);
+    box-shadow: 1px 1px 1px #c7cccf;
+}
+
+.cta .cta-inner {
+    position: relative;
+    padding: 3rem;
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta .cta-inner:before {
+    border-radius: 0.5rem;
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    border: 0.25rem solid rgba(255, 255, 255, 0.85);
+}
+
+
+/* TEAM */
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
